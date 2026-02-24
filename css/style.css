@@ -5,12 +5,12 @@
 
 body {
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50pt;
+    font-size: 40pt;
     padding: 4rem 2rem;
     color: #04a6b5;
 }
@@ -22,25 +22,39 @@ h2 {
     color: #04a6b5;
 }
 
-#menu {
+h3 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17pt;
+    margin: 2rem 0 3rem 0;
+    color: #585858;
+}
+
+p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15pt;
+    margin: 2rem 0 3rem 0;
+    color: #707070;
+}
+
+nav {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#menu a {
+nav a {
     text-decoration: none;
     color: #04a6b5;
     text-shadow: 1px 1px 1px rgb(69, 69, 69);
 }
 
-#menu a:hover {
+nav a:hover {
     color: white;
     text-shadow: 1px 1px 1px rgb(69, 69, 69);
     
 }
 
-#menu p {
+nav p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15pt;    
     background: #04a6b595;
@@ -50,13 +64,15 @@ h2 {
     border-radius: 50rem;
 }
 
-#foto_topo {
+/* imagem header */
+header {
     background-color: white;
 }
 
-#foto_topo img {
+header img {
     height: 30rem;
 }
+
 
 #info {
     background-color: #d5d6f5;
@@ -81,8 +97,8 @@ h2 {
     justify-content: center;    
 }
 
-#info p {
-    font-size: 17pt;
+#card {
+    font-size: 15pt;
     color: white;
     margin: 1.5rem;
     text-shadow: 1px 1px 2px rgb(69, 69, 69);
@@ -97,7 +113,7 @@ h2 {
 #info_icon01 {
     background-color: #7484b7;
     /* height: 15%; */
-    width: 20%;
+    width: 30%;
     border-radius: 6%;
     margin: 2%;
     padding-bottom: 1em;
@@ -108,7 +124,7 @@ h2 {
 #info_icon02 {
     background-color: #ffb363;
     /* height: 15%; */
-    width: 20%;
+    width: 30%;
     border-radius: 6%;
     margin: 2%;
     padding-bottom: 1em;
@@ -119,7 +135,7 @@ h2 {
 #info_icon03 {
     background-color: #00a7b7;
     /* height: 15%; */
-    width: 20%;
+    width: 30%;
     border-radius: 6%;
     margin: 2%;
     padding-bottom: 1em;
@@ -130,7 +146,7 @@ h2 {
 #info_icon04 {
     background-color: #68b775;
     /* height: 15%; */
-    width: 20%;
+    width: 30%;
     border-radius: 6%;
     margin: 2%;
     padding-bottom: 1em;
@@ -141,7 +157,7 @@ h2 {
 #info_icon05 {
     background-color: #ffe20c;
     /* height: 15%; */
-    width: 20%;
+    width: 30%;
     border-radius: 6%;
     margin: 2%;
     padding-bottom: 1em;
@@ -152,13 +168,15 @@ h2 {
 #info_icon06 {
     background-color: #ff604b;
     /* height: 15%; */
-    width: 20%;
+    width: 30%;
     border-radius: 6%;
     margin: 2%;
     padding-bottom: 1em;
     gap: 1em;
     box-shadow: 3px 3px 6px #7684b3;
 }
+
+/* Dados numéricos home */
 
 #dados {
     width: 100%;
@@ -169,130 +187,128 @@ h2 {
 }
 
 #dados01 {
+    width: 19%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15pt;    
+    font-size: 12pt;    
     background: #d5d6f5;
-    color:gray;
-    margin: 0 0.2rem 0 0.2rem;
+    color:gray;    
+    margin: 0 0.3rem 0 0.3rem;
     margin-bottom: 5rem;
-    padding: 3em 3em;
+    /* padding: 3em 3em; */
     border-radius: 0 0 2rem 2rem;
 }
 
 #dados01 h3 {
-    font-size: 21pt;
+    font-size: 18pt;
     color:rgb(97, 97, 97);
 }
 
 #dados02 {
+    width: 19%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15pt;    
+    font-size: 12pt;    
     background: #d5d6f5;
     color:gray;
-    margin: 0 0.2rem 0 0.2rem;
+    margin: 0 0.3rem 0 0.3rem;
     margin-bottom: 5rem;
-    padding: 3em 3em;
+    /* padding: 3em 3em; */
     border-radius: 0 0 2rem 2rem;
     
 }
 
 #dados02 h3 {
-    font-size: 21pt;
+    font-size: 18pt;
     color:rgb(97, 97, 97);
 }
 
 #dados03 {
+    width: 19%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15pt;    
+    font-size: 12pt;    
     background: #d5d6f5;
     color:gray;
-    margin: 0 0.2rem 0 0.2rem;
+    margin: 0 0.3rem 0 0.3rem;
     margin-bottom: 5rem;
-    padding: 3em 3em;
+    /* padding: 3em 3em; */
     border-radius: 0 0 2rem 2rem;
     
 }
 
 #dados03 h3 {
-    font-size: 25pt;
+    font-size: 18pt;
     color:rgb(97, 97, 97);
 }
 
 #dados04 {
+    width: 19%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 15pt;    
+    font-size: 12pt;    
     background: #d5d6f5;
     color:gray;
-    margin: 0 0.2rem 0 0.2rem;
+    margin: 0 0.3rem 0 0.3rem;
     margin-bottom: 5rem;
-    padding: 3em 3em;
+    /* padding: 3em 3em; */
     border-radius: 0 0 2rem 2rem;
     
 }
 
 #dados04 h3 {
-    font-size: 25pt;
+    font-size: 18pt;
     color:rgb(97, 97, 97);
 }
+
+
+/* Rodapé */
 
 footer {
     background-color: #00a7b7;
     color: rgb(63, 63, 63);
     width: 100%;
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
-#loja {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 10rem 3rem 10rem;    
-}
-
-#loja p {
-    padding: 0.4em;  
-}
-
-#loja h4 {
+footer h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20pt;
-    padding: 2rem 0.5rem;
-    color: white; 
+    padding: 2rem 0.8rem 1rem 0.8rem;
+    color: white;  
 }
 
-#redes {
+.loja {
     display: flex;
     flex-direction: column;
-    margin: 2rem 10rem 3rem 10rem;    
+    margin: 2rem 6rem 3rem 6rem;    
 }
 
-#redes p {    
-    padding: 0.4em;
-    margin-bottom: 1em;  
+.loja p {
+    margin: 0; 
+    font-size: 10pt;
+    padding: 0.3em;
 }
 
-#redes h4 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20pt;
-    padding: 1.6rem 0.5rem;
-    color: white; 
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 6rem 3rem 6rem;    
 }
 
-#redes_icon {
+.redes_icon {
     display: flex;
     justify-content: center; 
 }
 
-#icon_social {
-    width: 1.8em;
-    height: 1.8em;
+.icon_social {
+    width: 1.5em;
+    height: 1.5em;
     clip-path: circle(50%);
     margin: 1rem;
+    padding-top: 0.4rem;
 }
 
-#icon_social:hover {
-    transform: scale(2.5);
+.icon_social:hover {
+    transform: scale(1.5);
 }
 
 
