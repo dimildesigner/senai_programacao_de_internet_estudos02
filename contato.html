@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Pet Meu - Contato</title>
 </head>
 <body>
@@ -21,25 +22,38 @@
         <img src="img/cao_gato_topo_contato.jpg" alt="">        
     </div>
 
-    <div id="info">
+    <div id="contato">
         <h2>Contato</h2>
+        <form action="/action_page.php">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"><br><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea name="message" rows="10" cols="30" placeholder="Digite sua mensagem"></textarea><br><br>
+            <input id="botao_enviar" type="submit" value="Enviar">
+        </form>
     </div>
 
     <footer>
-        <div>
+        <div id="loja">
             <h4>Pet Meu</h4>
-            <p>R. Cães de Barros, 63. Moóca, São Paulo, SP.</p>
+            <p>
+                Av. Cães de Barros, 147 <br>
+                Mooca, São Paulo - SP, 03115-020
+            </p>
             <p>(11) 5672-3272</p>
             <p>www.petmeu.com.br</p>
             <p>contato@petmeu.com.br</p>
         </div>
-        <div>
+        <div id="redes">
             <h4>Redes Sociais</h4>
-            <p>Facebook</p>
-            <p>Instagram</p>
-            <p>YouTube</p>
-            <p>X</p>
-            <p>Tik Tok</p>
+            <div id="redes_icon">
+                <a href="#"><img id="icon_social" src="img/icone_face.jpg" alt="Facebook"></a>
+                <a href="#"><img id="icon_social" src="img/icone_instagram.jpg" alt="Instagram"></a>
+                <a href="#"><img id="icon_social" src="img/icone_linkedin.jpg" alt="LinkedIn"></a>
+                <a href="#"><img id="icon_social" src="img/icone_youtube.jpg" alt="YouTube"></a>
+                <a href="#"><img id="icon_social" src="img/icone_tiktok.jpg" alt="TikTok"></a>
+                <a href="#"><img id="icon_social" src="img/icone_x.jpg" alt="X"></a>
+            </div>
         </div>
     </footer>
     
