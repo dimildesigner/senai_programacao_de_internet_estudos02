@@ -24,16 +24,37 @@ h2 {
 
 h3 {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 17pt;
-    margin: 2rem 0 3rem 0;
+    font-size: 20pt;
+    margin: 2rem 0 1rem 0;
     color: #585858;
 }
 
 p {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15pt;
+    font-size: 16pt;
+    line-height: 2;
     margin: 2rem 0 3rem 0;
     color: #707070;
+}
+
+.menor {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12pt;
+    color: #525252;
+    margin-top: -50px;
+}
+
+
+strong {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17pt;
+    color: #04a6b5;
+}
+
+.maior {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20pt;
+    color: #04a6b5;
 }
 
 nav {
@@ -74,9 +95,16 @@ header img {
 }
 
 
-#info {
+section {
     background-color: #d5d6f5;
     padding: 2rem;
+}
+
+article {
+    background-color: #adaec742;
+    padding: 4rem 10rem;
+    margin: 5rem;
+    border-radius: 3rem;   
 }
 
 #info_lista1 {
@@ -272,7 +300,8 @@ footer h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20pt;
     padding: 2rem 0.8rem 1rem 0.8rem;
-    color: white;  
+    color: white;
+    text-shadow: 2px 2px 3px #525252;
 }
 
 .loja {
@@ -283,7 +312,8 @@ footer h4 {
 
 .loja p {
     margin: 0; 
-    font-size: 10pt;
+    font-size: 12pt;
+    color: rgb(36, 36, 36);
     padding: 0.3em;
 }
 
@@ -314,12 +344,12 @@ footer h4 {
 
 /* Contato */
 
-#contato {
+.contato {
     background-color: #d5d6f5;
     padding: 2rem;
 }
 
-#contato p {
+.contato p {
     font-size: 17pt;
     color: white;
     margin: 1.5rem;
