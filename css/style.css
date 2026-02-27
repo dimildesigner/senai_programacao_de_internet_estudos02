@@ -204,9 +204,11 @@ article {
     box-shadow: 3px 3px 6px #7684b3;
 }
 
-/* Dados numéricos home */
 
-#dados {
+
+/* Dados e Contador  */
+
+.dados {
     width: 100%;
     background-color:gray;
     display: flex;
@@ -214,7 +216,7 @@ article {
     
 }
 
-#dados01 {
+.dados_config {
     width: 19%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12pt;    
@@ -222,68 +224,116 @@ article {
     color:gray;    
     margin: 0 0.3rem 0 0.3rem;
     margin-bottom: 5rem;
-    /* padding: 3em 3em; */
     border-radius: 0 0 2rem 2rem;
 }
 
-#dados01 h3 {
-    font-size: 18pt;
-    color:rgb(97, 97, 97);
+/* Contador dados 1 */
+
+@property --num01 {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
 }
 
-#dados02 {
-    width: 19%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12pt;    
-    background: #d5d6f5;
-    color:gray;
-    margin: 0 0.3rem 0 0.3rem;
-    margin-bottom: 5rem;
-    /* padding: 3em 3em; */
-    border-radius: 0 0 2rem 2rem;
-    
+.counter01 {
+  counter-reset: num01 var(--num01);
+  animation: count01 5s forwards ease-out;
+  /* font-size: 3rem; */
+  font-weight: bold;
+  font-size: 18pt;
+  color:rgb(97, 97, 97);
 }
 
-#dados02 h3 {
-    font-size: 18pt;
-    color:rgb(97, 97, 97);
+.counter01::after {
+  content: counter(num01);
 }
 
-#dados03 {
-    width: 19%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12pt;    
-    background: #d5d6f5;
-    color:gray;
-    margin: 0 0.3rem 0 0.3rem;
-    margin-bottom: 5rem;
-    /* padding: 3em 3em; */
-    border-radius: 0 0 2rem 2rem;
-    
+@keyframes count01 {
+  from { --num01: 0; }
+  to { --num01: 800; } /* Número final */
 }
 
-#dados03 h3 {
-    font-size: 18pt;
-    color:rgb(97, 97, 97);
+
+/* Contador dados 2 */
+
+@property --num02 {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
 }
 
-#dados04 {
-    width: 19%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 12pt;    
-    background: #d5d6f5;
-    color:gray;
-    margin: 0 0.3rem 0 0.3rem;
-    margin-bottom: 5rem;
-    /* padding: 3em 3em; */
-    border-radius: 0 0 2rem 2rem;
-    
+.counter02 {
+  counter-reset: num02 var(--num02);
+  animation: count02 4s forwards ease-out;
+  /* font-size: 3rem; */
+  font-weight: bold;
+  font-size: 18pt;
+  color:rgb(97, 97, 97);
 }
 
-#dados04 h3 {
-    font-size: 18pt;
-    color:rgb(97, 97, 97);
+.counter02::after {
+  content: counter(num02);
 }
+
+@keyframes count02 {
+  from { --num02: 0; }
+  to { --num02: 600; } /* Número final */
+}
+
+
+/* Contador dados 3 */
+
+@property --num03 {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+.counter03 {
+  counter-reset: num03 var(--num03);
+  animation: count03 3s forwards ease-out;
+  /* font-size: 3rem; */
+  font-weight: bold;
+  font-size: 18pt;
+  color:rgb(97, 97, 97);
+}
+
+.counter03::after {
+  content: counter(num03);
+}
+
+@keyframes count03 {
+  from { --num03: 0; }
+  to { --num03: 300; } /* Número final */
+}
+
+
+/* Contador dados 4 */
+
+@property --num04 {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+.counter04 {
+  counter-reset: num04 var(--num04);
+  animation: count04 6s forwards ease-out;
+  /* font-size: 3rem; */
+  font-weight: bold;
+  font-size: 18pt;
+  color:rgb(97, 97, 97);
+}
+
+.counter04::after {
+  content: counter(num04);
+}
+
+@keyframes count04 {
+  from { --num04: 0; }
+  to { --num04: 1100; } /* Número final */
+}
+
 
 
 /* Rodapé */
@@ -333,8 +383,7 @@ footer h4 {
     width: 1.5em;
     height: 1.5em;
     clip-path: circle(50%);
-    margin: 1rem;
-    padding-top: 0.4rem;
+    margin: 0.8rem;
 }
 
 .icon_social:hover {
