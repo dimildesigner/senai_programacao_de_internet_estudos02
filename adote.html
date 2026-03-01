@@ -2,57 +2,505 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Adote Patinhas | Adote</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adote um cão ou gato pela Adote Patinhas. Saiba como funciona o processo de adoção responsável em São Paulo.">
+  <meta name="theme-color" content="#04a6b5">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Adote Patinhas – Adote um Pet</title>
 </head>
 
 <body>
-    <!-- Nome do site -->
-    <h1>Adote Patinhas</h1>
 
-    <!-- Menu -->
-    <nav>
-        <p><a href="index.html">Início</a></p>
-        <p><a href="sobre.html">Sobre</a></p>
-        <p><a href="adote.html">Adote</a></p>
-        <p><a href="contato.html">Contatos</a></p>
-    </nav>
+  <!-- ===================== SKIP LINK ===================== -->
+  <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
 
-    <header>
-        <img src="img/cao_gato_topo_adote.jpg" alt="">
-    </header>
+  <!-- ===================== HEADER / NAVEGAÇÃO ===================== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Adote Patinhas – página inicial">
+        <span class="logo-paw" aria-hidden="true">🐾</span>
+        <span class="logo-text">Adote Patinhas</span>
+      </a>
 
-    <section>
-        <h2>Adote Cães e Gatos</h2>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu de navegação">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html"   class="nav-link">Início</a></li>
+          <li><a href="sobre.html"   class="nav-link">Sobre</a></li>
+          <li><a href="adote.html"   class="nav-link active" aria-current="page">Adote</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero hero--short" aria-label="Imagem de destaque da página Adote">
+    <div class="hero-overlay hero-overlay--warm" aria-hidden="true"></div>
+    <img
+      class="hero-img"
+      src="img/cao_gato_topo_home.jpg"
+      alt="Cão e gato felizes aguardando adoção"
+      loading="eager"
+    >
+    <div class="hero-content">
+      <h1 class="hero-title">Adote um Pet 🐾</h1>
+      <p class="hero-subtitle">Adotar é um gesto de amor que transforma duas vidas: a do animal e a sua.</p>
+      <a href="#formulario-adocao" class="btn btn-primary">Quero adotar agora</a>
+    </div>
+  </section>
+
+  <!-- ===================== CONTEÚDO PRINCIPAL ===================== -->
+  <main id="main-content">
+
+    <!-- ── Introdução ── -->
+    <section class="adopt-intro" aria-labelledby="adopt-intro-heading">
+      <div class="container adopt-intro__layout">
+
+        <div class="adopt-intro__text reveal">
+          <h2 id="adopt-intro-heading" class="section-title text-left">Por que adotar?</h2>
+          <p>
+            Na <strong>Adote Patinhas</strong>, cada cão e gato disponível já passou por resgate, avaliação
+            veterinária, vacinação e castração (quando indicado). Eles recebem cuidado, carinho e
+            socialização até estarem prontos para encontrar um lar definitivo.
+          </p>
+          <p>
+            Ao escolher a adoção responsável, você não está apenas levando um pet para casa — você está
+            oferecendo uma segunda chance, ajudando a reduzir o abandono e fazendo parte de uma corrente
+            de amor que salva vidas.
+          </p>
+          <p>
+            Estudos mostram que conviver com animais reduz o estresse, melhora o humor e fortalece o
+            senso de responsabilidade e empatia. Mas quem adota sabe: os benefícios vão muito além disso.
+          </p>
+        </div>
+
+        <ul class="adopt-reasons reveal" aria-label="Motivos para adotar" role="list">
+          <li class="adopt-reason">
+            <span class="adopt-reason__icon" aria-hidden="true">❤️</span>
+            <span>Você <strong>salva uma vida</strong></span>
+          </li>
+          <li class="adopt-reason">
+            <span class="adopt-reason__icon" aria-hidden="true">🚫</span>
+            <span>Combate o <strong>abandono</strong> e incentiva a posse responsável</span>
+          </li>
+          <li class="adopt-reason">
+            <span class="adopt-reason__icon" aria-hidden="true">🤝</span>
+            <span>Ganha um <strong>companheiro fiel</strong> para toda a vida</span>
+          </li>
+          <li class="adopt-reason">
+            <span class="adopt-reason__icon" aria-hidden="true">😊</span>
+            <span>Vive momentos de <strong>alegria, carinho e conexão</strong> verdadeira</span>
+          </li>
+          <li class="adopt-reason">
+            <span class="adopt-reason__icon" aria-hidden="true">🧠</span>
+            <span>Reduz o <strong>estresse</strong> e melhora o bem-estar mental</span>
+          </li>
+          <li class="adopt-reason">
+            <span class="adopt-reason__icon" aria-hidden="true">🌱</span>
+            <span>Fortalece a <strong>empatia</strong> e o senso de responsabilidade</span>
+          </li>
+        </ul>
+
+      </div>
     </section>
 
-    <footer>
-        <div class="loja">
-            <h4>Adote Patinhas</h4>
-            <p>
-                Av. Cães e Gatos de Barros, 147<br>
-                Mooca, São Paulo - SP, 03115-020<br>
-                www.adotepatinhas.com.br<br>
-                contato@adotepatinhas.com.br<br>
-                Tel.: (11) 5672-3272<br>
-            </p>
-        </div>
-        <div class="redes">
-            <h4>Redes Sociais</h4>
-            <div class="redes_icon">
-                <a href="#"><img class="icon_social" src="img/icone_whatsapp.jpg" alt="Whatsapp"></a>
-                <a href="#"><img class="icon_social" src="img/icone_face.jpg" alt="Facebook"></a>
-                <a href="#"><img class="icon_social" src="img/icone_instagram.jpg" alt="Instagram"></a>
-                <a href="#"><img class="icon_social" src="img/icone_linkedin.jpg" alt="LinkedIn"></a>
-                <a href="#"><img class="icon_social" src="img/icone_youtube.jpg" alt="YouTube"></a>
-                <a href="#"><img class="icon_social" src="img/icone_tiktok.jpg" alt="TikTok"></a>
-                <a href="#"><img class="icon_social" src="img/icone_x.jpg" alt="X"></a>
-            </div>
-        </div>
-    </footer>
+    <!-- ── Processo de adoção ── -->
+    <section class="adopt-process" aria-labelledby="process-heading">
+      <div class="container">
+        <h2 id="process-heading" class="section-title">Como funciona o processo?</h2>
+        <p class="section-subtitle">
+          Nosso processo é simples, mas responsável — porque queremos garantir que cada patinha
+          encontre um lar seguro e definitivo.
+        </p>
 
+        <ol class="process-steps" aria-label="Etapas do processo de adoção">
+
+          <li class="process-step reveal">
+            <div class="step-number" aria-hidden="true">1</div>
+            <div class="step-content">
+              <h3>Formulário de interesse</h3>
+              <p>Preencha nosso formulário abaixo contando um pouco sobre você, sua casa e o perfil de pet que imagina.</p>
+            </div>
+          </li>
+
+          <li class="process-step reveal">
+            <div class="step-number" aria-hidden="true">2</div>
+            <div class="step-content">
+              <h3>Entrevista com nossa equipe</h3>
+              <p>Nossa equipe entra em contato para uma conversa descontraída para entender melhor seu estilo de vida.</p>
+            </div>
+          </li>
+
+          <li class="process-step reveal">
+            <div class="step-number" aria-hidden="true">3</div>
+            <div class="step-content">
+              <h3>Visita domiciliar</h3>
+              <p>Verificamos se o ambiente é seguro e adequado para o pet. Também tiramos dúvidas sobre adaptação.</p>
+            </div>
+          </li>
+
+          <li class="process-step reveal">
+            <div class="step-number" aria-hidden="true">4</div>
+            <div class="step-content">
+              <h3>Apresentação do pet</h3>
+              <p>Você e o pet se conhecem! Organizamos o encontro para que a conexão aconteça naturalmente.</p>
+            </div>
+          </li>
+
+          <li class="process-step reveal">
+            <div class="step-number" aria-hidden="true">5</div>
+            <div class="step-content">
+              <h3>Termo de responsabilidade</h3>
+              <p>Formalizamos o compromisso de cuidado, proteção e carinho por toda a vida do animal.</p>
+            </div>
+          </li>
+
+        </ol>
+
+        <p class="process-note reveal" aria-label="Nota sobre o processo">
+          💛 Nosso objetivo não é dificultar — é proteger. Queremos que a adoção seja um compromisso
+          para toda a vida do animal.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ── Reflexão antes de adotar ── -->
+    <section class="adopt-checklist" aria-labelledby="checklist-heading">
+      <div class="container">
+        <div class="checklist-layout">
+
+          <div class="checklist-text reveal">
+            <h2 id="checklist-heading" class="section-title text-left">Quem pode adotar?</h2>
+            <p>
+              Pessoas <strong>maiores de 18 anos</strong>, dispostas a assumir o compromisso de cuidado,
+              proteção e carinho por toda a vida do animal. Avaliamos cada perfil para encontrar a
+              combinação ideal entre pet e tutor.
+            </p>
+          </div>
+
+          <div class="checklist-card reveal" aria-labelledby="checklist-card-heading">
+            <h3 id="checklist-card-heading" class="checklist-card__title">
+              💡 Antes de adotar, reflita:
+            </h3>
+            <ul class="checklist-items" role="list">
+              <li class="checklist-item">
+                <span class="check-icon" aria-hidden="true">✅</span>
+                Você tem <strong>tempo para dedicar</strong> ao pet?
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon" aria-hidden="true">✅</span>
+                Está preparado para <strong>custos</strong> com alimentação, veterinário e cuidados?
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon" aria-hidden="true">✅</span>
+                Sua <strong>casa é segura</strong> e adequada para o animal?
+              </li>
+              <li class="checklist-item">
+                <span class="check-icon" aria-hidden="true">✅</span>
+                <strong>Toda a família</strong> está de acordo?
+              </li>
+            </ul>
+            <p class="checklist-card__footer">
+              Se a resposta for sim, você está pronto para transformar uma vida — inclusive a sua.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Depoimentos ── -->
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 id="testimonials-heading" class="section-title">Histórias que aquecem o coração 🐶🐱</h2>
+        <p class="section-subtitle">Nada melhor do que ouvir quem já vive essa experiência.</p>
+
+        <div class="testimonials-grid" role="list">
+
+          <article class="testimonial-card reveal" role="listitem" aria-label="Depoimento de Ana Clara">
+            <div class="testimonial-header">
+              <span class="testimonial-avatar" aria-hidden="true">👩</span>
+              <div>
+                <strong class="testimonial-name">Ana Clara</strong>
+                <span class="testimonial-pet">Tutora da Luna 🐱</span>
+              </div>
+            </div>
+            <blockquote class="testimonial-quote">
+              <p>
+                "Eu adotei a Luna há um ano e posso dizer que foi a melhor decisão da minha vida.
+                Ela chegou tímida, mas hoje é a alegria da casa. A adoção me ensinou sobre
+                paciência, amor e responsabilidade."
+              </p>
+            </blockquote>
+            <div class="testimonial-stars" aria-label="5 estrelas">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal" role="listitem" aria-label="Depoimento de Ricardo">
+            <div class="testimonial-header">
+              <span class="testimonial-avatar" aria-hidden="true">👨</span>
+              <div>
+                <strong class="testimonial-name">Ricardo</strong>
+                <span class="testimonial-pet">Tutor do Thor 🐶</span>
+              </div>
+            </div>
+            <blockquote class="testimonial-quote">
+              <p>
+                "Sempre quis ter um cachorro, mas não imaginava o quanto isso mudaria minha rotina
+                para melhor. O Thor me acompanha nas caminhadas e é meu melhor amigo. Adotar foi
+                um ato de amor que voltou em dobro."
+              </p>
+            </blockquote>
+            <div class="testimonial-stars" aria-label="5 estrelas">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal" role="listitem" aria-label="Depoimento de Juliana e Marcos">
+            <div class="testimonial-header">
+              <span class="testimonial-avatar" aria-hidden="true">👫</span>
+              <div>
+                <strong class="testimonial-name">Juliana e Marcos</strong>
+                <span class="testimonial-pet">Tutores da Mel 🐶</span>
+              </div>
+            </div>
+            <blockquote class="testimonial-quote">
+              <p>
+                "Depois que adotamos a Mel, nossa casa ficou mais leve. Ela trouxe união, risadas
+                e muito carinho. Saber que demos uma segunda chance para ela não tem preço."
+              </p>
+            </blockquote>
+            <div class="testimonial-stars" aria-label="5 estrelas">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Formulário de interesse ── -->
+    <section class="adopt-form-section" id="formulario-adocao" aria-labelledby="adopt-form-heading">
+      <div class="container adopt-form-layout">
+
+        <div class="adopt-form-intro reveal">
+          <h2 id="adopt-form-heading" class="section-title text-left">
+            🌟 Pronto para encontrar seu novo melhor amigo?
+          </h2>
+          <p>
+            Cada patinha tem uma história esperando por um recomeço. Talvez a próxima história
+            feliz seja a sua.
+          </p>
+          <div class="adopt-tagline">
+            <span>Conectando vidas, transformando histórias.</span>
+            <span aria-hidden="true">🐾💛</span>
+          </div>
+        </div>
+
+        <div class="adopt-form-wrap reveal">
+          <h3 class="adopt-form-wrap__title">Formulário de interesse</h3>
+
+          <div id="adopt-form-status" class="form-status" role="alert" aria-live="assertive" hidden></div>
+
+          <form
+            id="adoptForm"
+            class="contact-form"
+            novalidate
+            aria-label="Formulário de interesse em adoção"
+          >
+
+            <!-- Nome + Sobrenome -->
+            <div class="form-row">
+              <div class="form-field">
+                <label for="adopt-nome" class="form-label">Nome <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="adopt-nome" name="nome" class="form-input"
+                  placeholder="Seu nome" autocomplete="given-name"
+                  required aria-required="true" aria-describedby="adopt-nome-error">
+                <span id="adopt-nome-error" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="adopt-sobrenome" class="form-label">Sobrenome <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="adopt-sobrenome" name="sobrenome" class="form-input"
+                  placeholder="Seu sobrenome" autocomplete="family-name"
+                  required aria-required="true" aria-describedby="adopt-sobrenome-error">
+                <span id="adopt-sobrenome-error" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <!-- E-mail + Telefone -->
+            <div class="form-row">
+              <div class="form-field">
+                <label for="adopt-email" class="form-label">E-mail <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="adopt-email" name="email" class="form-input"
+                  placeholder="seu@email.com" autocomplete="email"
+                  required aria-required="true" aria-describedby="adopt-email-error">
+                <span id="adopt-email-error" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="adopt-telefone" class="form-label">WhatsApp <span class="required" aria-hidden="true">*</span></label>
+                <input type="tel" id="adopt-telefone" name="telefone" class="form-input"
+                  placeholder="(11) 99999-9999" autocomplete="tel"
+                  required aria-required="true" aria-describedby="adopt-telefone-error">
+                <span id="adopt-telefone-error" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <!-- Cidade + Moradia -->
+            <div class="form-row">
+              <div class="form-field">
+                <label for="adopt-cidade" class="form-label">Cidade / Estado <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="adopt-cidade" name="cidade" class="form-input"
+                  placeholder="Ex.: São Paulo – SP"
+                  required aria-required="true" aria-describedby="adopt-cidade-error">
+                <span id="adopt-cidade-error" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="adopt-moradia" class="form-label">Tipo de moradia <span class="required" aria-hidden="true">*</span></label>
+                <select id="adopt-moradia" name="moradia" class="form-input form-select"
+                  required aria-required="true" aria-describedby="adopt-moradia-error">
+                  <option value="" disabled selected>Selecione…</option>
+                  <option value="casa-quintal">Casa com quintal</option>
+                  <option value="casa-sem-quintal">Casa sem quintal</option>
+                  <option value="apto-pequeno">Apartamento pequeno</option>
+                  <option value="apto-grande">Apartamento grande</option>
+                </select>
+                <span id="adopt-moradia-error" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <!-- Tipo de pet + Porte -->
+            <div class="form-row">
+              <div class="form-field">
+                <label for="adopt-especie" class="form-label">Tipo de pet <span class="required" aria-hidden="true">*</span></label>
+                <select id="adopt-especie" name="especie" class="form-input form-select"
+                  required aria-required="true" aria-describedby="adopt-especie-error">
+                  <option value="" disabled selected>Selecione…</option>
+                  <option value="cachorro">🐶 Cachorro</option>
+                  <option value="gato">🐱 Gato</option>
+                  <option value="indiferente">Sem preferência</option>
+                </select>
+                <span id="adopt-especie-error" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="adopt-porte" class="form-label">Porte do animal</label>
+                <select id="adopt-porte" name="porte" class="form-input form-select">
+                  <option value="" disabled selected>Selecione…</option>
+                  <option value="pequeno">Pequeno</option>
+                  <option value="medio">Médio</option>
+                  <option value="grande">Grande</option>
+                  <option value="indiferente">Indiferente</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Tem outros pets? -->
+            <div class="form-field">
+              <label for="adopt-outros-pets" class="form-label">Já tem outros animais em casa?</label>
+              <select id="adopt-outros-pets" name="outros_pets" class="form-input form-select">
+                <option value="" disabled selected>Selecione…</option>
+                <option value="nao">Não</option>
+                <option value="sim-cachorro">Sim – cachorro(s)</option>
+                <option value="sim-gato">Sim – gato(s)</option>
+                <option value="sim-ambos">Sim – cachorros e gatos</option>
+                <option value="sim-outro">Sim – outros animais</option>
+              </select>
+            </div>
+
+            <!-- Mensagem / motivação -->
+            <div class="form-field">
+              <label for="adopt-mensagem" class="form-label">
+                Por que você quer adotar? <span class="required" aria-hidden="true">*</span>
+              </label>
+              <textarea id="adopt-mensagem" name="mensagem" class="form-input form-textarea"
+                rows="4" placeholder="Conte um pouco sobre você e o que te motivou a adotar…"
+                required aria-required="true"
+                aria-describedby="adopt-mensagem-error adopt-mensagem-hint"
+                maxlength="800"></textarea>
+              <div class="textarea-footer">
+                <span id="adopt-mensagem-error" class="field-error" role="alert" aria-live="polite"></span>
+                <span id="adopt-mensagem-hint" class="field-hint char-count adopt-char">0 / 800</span>
+              </div>
+            </div>
+
+            <!-- LGPD -->
+            <div class="form-field form-field--checkbox">
+              <input type="checkbox" id="adopt-lgpd" name="lgpd" class="form-checkbox"
+                required aria-required="true" aria-describedby="adopt-lgpd-error">
+              <label for="adopt-lgpd" class="form-label form-label--inline">
+                Li e concordo com a
+                <a href="#" class="inline-link" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>
+                e autorizo o uso dos meus dados para contato.
+                <span class="required" aria-hidden="true">*</span>
+              </label>
+              <span id="adopt-lgpd-error" class="field-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" id="adopt-submit" class="btn btn-primary btn--full">
+              <span class="btn-label">🐾 Enviar interesse em adotar</span>
+              <span class="btn-loading" aria-hidden="true" hidden>Enviando…</span>
+            </button>
+
+            <p class="form-required-note"><span aria-hidden="true">*</span> Campos obrigatórios</p>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+
+      <div class="footer-info">
+        <h2 class="footer-brand">Adote Patinhas</h2>
+        <address>
+          <p>
+            R. do Oratório, 215<br>
+            Mooca, São Paulo – SP, 03117-000
+          </p>
+          <p>
+            <a href="https://www.adotepatinhas.com.br" target="_blank" rel="noopener noreferrer">www.adotepatinhas.com.br</a><br>
+            <a href="mailto:contato@adotepatinhas.com.br">contato@adotepatinhas.com.br</a><br>
+            <a href="tel:+551156723272">Tel.: (11) 5672-3272</a>
+          </p>
+        </address>
+      </div>
+
+      <div class="footer-social">
+        <h2 class="footer-social-title">Redes Sociais</h2>
+        <nav aria-label="Redes sociais">
+          <ul class="social-list" role="list">
+            <li><a href="#" class="social-link" aria-label="WhatsApp"><img src="img/icone_whatsapp.jpg"   alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="Facebook"><img src="img/icone_face.jpg"       alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="Instagram"><img src="img/icone_instagram.jpg" alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="LinkedIn"><img src="img/icone_linkedin.jpg"   alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="YouTube"><img src="img/icone_youtube.jpg"    alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="TikTok"><img src="img/icone_tiktok.jpg"      alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="X (Twitter)"><img src="img/icone_x.jpg"      alt="" aria-hidden="true" loading="lazy"></a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Adote Patinhas. Feito com ❤️ por quem ama animais.</p>
+  </footer>
+
+  <!-- ===================== BOTÃO VOLTAR AO TOPO ===================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo da página" hidden>
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,63 +1,398 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Adote Patinhas | Contato</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a Adote Patinhas. Tire dúvidas sobre adoção, voluntariado, doações e parcerias.">
+  <meta name="theme-color" content="#04a6b5">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Adote Patinhas – Contato</title>
 </head>
+
 <body>
-    <!-- Nome do site -->
-    <h1>Adote Patinhas</h1>
 
-    <!-- Menu -->
-    <nav>
-        <p><a href="index.html">Início</a></p>
-        <p><a href="sobre.html">Sobre</a></p>
-        <p><a href="adote.html">Adote</a></p>
-        <p><a href="contato.html">Contatos</a></p>
-    </nav>
+  <!-- ===================== SKIP LINK ===================== -->
+  <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
 
-    <header>
-        <img src="img/cao_gato_topo_contato.jpg" alt="">        
-    </header>
+  <!-- ===================== HEADER / NAVEGAÇÃO ===================== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Adote Patinhas – página inicial">
+        <span class="logo-paw" aria-hidden="true">🐾</span>
+        <span class="logo-text">Adote Patinhas</span>
+      </a>
 
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu de navegação">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
 
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html"   class="nav-link">Início</a></li>
+          <li><a href="sobre.html"   class="nav-link">Sobre</a></li>
+          <li><a href="adote.html"   class="nav-link">Adote</a></li>
+          <li><a href="contato.html" class="nav-link active" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="contato">
-        <h2>Contato</h2>
-        <form action="/action_page.php">
-            <label for="name">Nome:</label><br>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"><br><br>
-            <label for="message">Mensagem:</label><br>
-            <textarea name="message" rows="10" cols="30" placeholder="Digite sua mensagem"></textarea><br><br>
-            <input id="botao_enviar" type="submit" value="Enviar">
-        </form>
+  <!-- ===================== HERO ===================== -->
+  <section class="hero hero--short" aria-label="Imagem de destaque da página Contato">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <img
+      class="hero-img"
+      src="img/cao_gato_topo_home2.png"
+      alt="Pet aguardando carinhosamente por um contato"
+      loading="eager"
+    >
+    <div class="hero-content">
+      <h1 class="hero-title">Fale com a Gente 🐾</h1>
+      <p class="hero-subtitle">Tem dúvidas sobre adoção, quer ser voluntário ou fazer uma doação? Estamos aqui!</p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTEÚDO PRINCIPAL ===================== -->
+  <main id="main-content">
+
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <div class="container contact-layout">
+
+        <!-- ── Coluna esquerda: informações ── -->
+        <aside class="contact-info reveal" aria-label="Informações de contato">
+
+          <h2 id="contact-heading" class="contact-info__title">Como podemos ajudar?</h2>
+          <p class="contact-info__intro">
+            Escolha o assunto e preencha o formulário — nossa equipe responde em até <strong>2 dias úteis</strong>.
+            Para urgências, use o WhatsApp ou nos ligue.
+          </p>
+
+          <!-- Canais diretos -->
+          <ul class="contact-channels" role="list" aria-label="Canais de atendimento">
+
+            <li class="contact-channel">
+              <span class="channel-icon" aria-hidden="true">📍</span>
+              <div>
+                <strong class="channel-label">Endereço</strong>
+                <address>
+                  Av. Cães e Gatos de Barros, 147<br>
+                  Mooca, São Paulo – SP, 03115-020
+                </address>
+              </div>
+            </li>
+
+            <li class="contact-channel">
+              <span class="channel-icon" aria-hidden="true">📞</span>
+              <div>
+                <strong class="channel-label">Telefone / WhatsApp</strong>
+                <p>
+                  <a href="tel:+551156723272">(11) 5672-3272</a><br>
+                  <a href="https://wa.me/551156723272" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+                    Chamar no WhatsApp
+                  </a>
+                </p>
+              </div>
+            </li>
+
+            <li class="contact-channel">
+              <span class="channel-icon" aria-hidden="true">✉️</span>
+              <div>
+                <strong class="channel-label">E-mail</strong>
+                <p><a href="mailto:contato@adotepatinhas.com.br">contato@adotepatinhas.com.br</a></p>
+              </div>
+            </li>
+
+            <li class="contact-channel">
+              <span class="channel-icon" aria-hidden="true">🕐</span>
+              <div>
+                <strong class="channel-label">Horário de atendimento</strong>
+                <p>
+                  Seg – Sex: 9h às 18h<br>
+                  Sáb: 9h às 13h<br>
+                  Dom e feriados: fechado
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+          <!-- FAQ rápido -->
+          <div class="contact-faq" aria-labelledby="faq-heading">
+            <h3 id="faq-heading" class="faq-title">Dúvidas frequentes</h3>
+            <ul class="faq-list" role="list">
+              <li class="faq-item">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq1-body">
+                  Como funciona o processo de adoção?
+                  <span class="faq-arrow" aria-hidden="true">›</span>
+                </button>
+                <div id="faq1-body" class="faq-body" hidden>
+                  <p>O processo envolve preenchimento de formulário, entrevista e visita domiciliar. Após aprovação, agendamos a apresentação do pet e assinatura do termo de responsabilidade.</p>
+                </div>
+              </li>
+              <li class="faq-item">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq2-body">
+                  Posso ser voluntário?
+                  <span class="faq-arrow" aria-hidden="true">›</span>
+                </button>
+                <div id="faq2-body" class="faq-body" hidden>
+                  <p>Sim! Aceitamos voluntários para passeios, socialização, transporte de pets, divulgação e apoio em feiras de adoção. Use o formulário ao lado e selecione "Voluntariado".</p>
+                </div>
+              </li>
+              <li class="faq-item">
+                <button class="faq-btn" aria-expanded="false" aria-controls="faq3-body">
+                  Como posso fazer uma doação?
+                  <span class="faq-arrow" aria-hidden="true">›</span>
+                </button>
+                <div id="faq3-body" class="faq-body" hidden>
+                  <p>Aceitamos doações em dinheiro (Pix), ração, medicamentos e acessórios. Entre em contato pelo formulário ou WhatsApp e nos informe o que deseja contribuir.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+
+        <!-- ── Coluna direita: formulário ── -->
+        <div class="contact-form-wrap reveal" aria-label="Formulário de contato">
+          <h2 class="contact-form__title">Envie uma mensagem</h2>
+
+          <!-- Alerta de status (preenchido via JS) -->
+          <div id="form-status" class="form-status" role="alert" aria-live="assertive" hidden></div>
+
+          <form
+            id="contactForm"
+            class="contact-form"
+            novalidate
+            aria-label="Formulário de contato Adote Patinhas"
+          >
+
+            <!-- Nome + Sobrenome -->
+            <div class="form-row">
+              <div class="form-field">
+                <label for="nome" class="form-label">Nome <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  class="form-input"
+                  placeholder="Seu nome"
+                  autocomplete="given-name"
+                  required
+                  aria-required="true"
+                  aria-describedby="nome-error"
+                >
+                <span id="nome-error" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="sobrenome" class="form-label">Sobrenome <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="sobrenome"
+                  name="sobrenome"
+                  class="form-input"
+                  placeholder="Seu sobrenome"
+                  autocomplete="family-name"
+                  required
+                  aria-required="true"
+                  aria-describedby="sobrenome-error"
+                >
+                <span id="sobrenome-error" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <!-- E-mail + Telefone -->
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email" class="form-label">E-mail <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="seu@email.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                  aria-describedby="email-error"
+                >
+                <span id="email-error" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="telefone" class="form-label">Telefone / WhatsApp</label>
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  class="form-input"
+                  placeholder="(11) 99999-9999"
+                  autocomplete="tel"
+                  aria-describedby="telefone-hint"
+                >
+                <span id="telefone-hint" class="field-hint">Opcional – para retorno mais rápido</span>
+              </div>
+            </div>
+
+            <!-- Assunto -->
+            <div class="form-field">
+              <label for="assunto" class="form-label">Assunto <span class="required" aria-hidden="true">*</span></label>
+              <select
+                id="assunto"
+                name="assunto"
+                class="form-input form-select"
+                required
+                aria-required="true"
+                aria-describedby="assunto-error"
+              >
+                <option value="" disabled selected>Selecione um assunto…</option>
+                <option value="adocao">🐾 Quero adotar um pet</option>
+                <option value="voluntariado">🤝 Voluntariado</option>
+                <option value="doacao">💛 Doação (ração, itens ou dinheiro)</option>
+                <option value="parceria">🏢 Parceria institucional</option>
+                <option value="devolucao">🔄 Devolução de pet adotado</option>
+                <option value="duvida">❓ Dúvida geral</option>
+                <option value="outro">💬 Outro assunto</option>
+              </select>
+              <span id="assunto-error" class="field-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <!-- Como conheceu -->
+            <div class="form-field">
+              <label for="origem" class="form-label">Como nos conheceu?</label>
+              <select id="origem" name="origem" class="form-input form-select">
+                <option value="" disabled selected>Selecione…</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="google">Google / busca na internet</option>
+                <option value="indicacao">Indicação de amigo ou familiar</option>
+                <option value="feira">Feira de adoção</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <!-- Mensagem -->
+            <div class="form-field">
+              <label for="mensagem" class="form-label">Mensagem <span class="required" aria-hidden="true">*</span></label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                class="form-input form-textarea"
+                rows="5"
+                placeholder="Escreva sua mensagem aqui…"
+                required
+                aria-required="true"
+                aria-describedby="mensagem-error mensagem-hint"
+                maxlength="1000"
+              ></textarea>
+              <div class="textarea-footer">
+                <span id="mensagem-error" class="field-error" role="alert" aria-live="polite"></span>
+                <span id="mensagem-hint" class="field-hint char-count">0 / 1000</span>
+              </div>
+            </div>
+
+            <!-- LGPD -->
+            <div class="form-field form-field--checkbox">
+              <input
+                type="checkbox"
+                id="lgpd"
+                name="lgpd"
+                class="form-checkbox"
+                required
+                aria-required="true"
+                aria-describedby="lgpd-error"
+              >
+              <label for="lgpd" class="form-label form-label--inline">
+                Li e concordo com a
+                <a href="#" class="inline-link" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>
+                e autorizo o uso dos meus dados para contato.
+                <span class="required" aria-hidden="true">*</span>
+              </label>
+              <span id="lgpd-error" class="field-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <!-- Botão enviar -->
+            <button type="submit" id="botao_enviar" class="btn btn-primary btn--full" aria-describedby="form-status">
+              <span class="btn-label">Enviar mensagem</span>
+              <span class="btn-loading" aria-hidden="true" hidden>Enviando…</span>
+            </button>
+
+            <p class="form-required-note"><span aria-hidden="true">*</span> Campos obrigatórios</p>
+
+          </form>
+        </div>
+
+      </div>
     </section>
 
-    <footer>
-        <div class="loja">
-            <h4>Adote Patinhas</h4>
-            <p>
-                Av. Cães e Gatos de Barros, 147<br>
-                Mooca, São Paulo - SP, 03115-020<br>
-                www.adotepatinhas.com.br<br>
-                contato@adotepatinhas.com.br<br>
-                Tel.: (11) 5672-3272<br>                
-            </p>
-        </div>
-        <div class="redes">
-            <h4>Redes Sociais</h4>
-            <div class="redes_icon">
-                <a href="#"><img class="icon_social" src="img/icone_whatsapp.jpg" alt="Whatsapp"></a>
-                <a href="#"><img class="icon_social" src="img/icone_face.jpg" alt="Facebook"></a>
-                <a href="#"><img class="icon_social" src="img/icone_instagram.jpg" alt="Instagram"></a>
-                <a href="#"><img class="icon_social" src="img/icone_linkedin.jpg" alt="LinkedIn"></a>
-                <a href="#"><img class="icon_social" src="img/icone_youtube.jpg" alt="YouTube"></a>
-                <a href="#"><img class="icon_social" src="img/icone_tiktok.jpg" alt="TikTok"></a>
-                <a href="#"><img class="icon_social" src="img/icone_x.jpg" alt="X"></a>
-            </div>
-        </div>
-    </footer>    
+    <!-- Mapa / localização -->
+    <section class="map-section" aria-labelledby="map-heading">
+      <div class="container">
+        <h2 id="map-heading" class="section-title">Nossa Localização</h2>
+        <p class="section-subtitle">Venha nos visitar! Adoramos receber visitas de quem ama animais.</p>
+      </div>
+      <div class="map-embed" aria-label="Mapa mostrando a localização da Adote Patinhas na Mooca, São Paulo">
+        <!-- Embed de mapa — substitua pelo iframe real do Google Maps da sua localização -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5!2d-46.6!3d-23.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAwLjAiUyA0NsKwMzYnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="380"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa da Adote Patinhas – Mooca, São Paulo"
+        ></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+
+      <div class="footer-info">
+        <h2 class="footer-brand">Adote Patinhas</h2>
+        <address>
+          <p>
+            R. do Oratório, 215<br>
+            Mooca, São Paulo – SP, 03117-000
+          </p>
+          <p>
+            <a href="https://www.adotepatinhas.com.br" target="_blank" rel="noopener noreferrer">www.adotepatinhas.com.br</a><br>
+            <a href="mailto:contato@adotepatinhas.com.br">contato@adotepatinhas.com.br</a><br>
+            <a href="tel:+551156723272">Tel.: (11) 5672-3272</a>
+          </p>
+        </address>
+      </div>
+
+      <div class="footer-social">
+        <h2 class="footer-social-title">Redes Sociais</h2>
+        <nav aria-label="Redes sociais">
+          <ul class="social-list" role="list">
+            <li><a href="#" class="social-link" aria-label="WhatsApp"><img src="img/icone_whatsapp.jpg"   alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="Facebook"><img src="img/icone_face.jpg"       alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="Instagram"><img src="img/icone_instagram.jpg" alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="LinkedIn"><img src="img/icone_linkedin.jpg"   alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="YouTube"><img src="img/icone_youtube.jpg"    alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="TikTok"><img src="img/icone_tiktok.jpg"      alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="X (Twitter)"><img src="img/icone_x.jpg"      alt="" aria-hidden="true" loading="lazy"></a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Adote Patinhas. Feito com ❤️ por quem ama animais.</p>
+  </footer>
+
+  <!-- ===================== BOTÃO VOLTAR AO TOPO ===================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo da página" hidden>
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>

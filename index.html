@@ -2,120 +2,182 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Minhas Patinhas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adote Patinhas – ajudando cães e gatos a encontrarem um lar cheio de amor em São Paulo.">
+  <meta name="theme-color" content="#04a6b5">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Adote Patinhas – Início</title>
 </head>
 
 <body>
-    <!-- Nome do site -->
-    <h1>Adote Patinhas</h1>
 
-    <!-- Menu -->
-    <nav>
-        <p><a href="index.html">Início</a></p>
-        <p><a href="sobre.html">Sobre</a></p>
-        <p><a href="adote.html">Adote</a></p>
-        <p><a href="contato.html">Contatos</a></p>
-    </nav>
+  <!-- ===================== SKIP LINK (acessibilidade) ===================== -->
+  <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
 
-    <header>
-        <img src="img/cao_gato_topo_home.jpg" alt="">
-    </header>
+  <!-- ===================== CABEÇALHO / NAVEGAÇÃO ===================== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Adote Patinhas – página inicial">
+        <span class="logo-paw" aria-hidden="true">🐾</span>
+        <span class="logo-text">Adote Patinhas</span>
+      </a>
 
-    <section>
-        <article>
-            <div id="info">
-                <h2>Benefícios de viver com um pet</h2>
-                <h3>Veja alguns dos benefícios de ter um pet seu:</h3>
+      <!-- Botão hamburguer (mobile) -->
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu de navegação">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
 
-                <div id="info_lista1">
-                    <div id="info_icon01">
-                        <img src="img/pet_info01.jpg" alt="">
-                        <p id="card">Diminuição da pressão arterial</p>
-                    </div>
-                    <div id="info_icon02">
-                        <img src="img/pet_info02.jpg" alt="">
-                        <p id="card">Diminui o nível de colesterol</p>
-                    </div>
-                    <div id="info_icon03">
-                        <img src="img/pet_info03.jpg" alt="">
-                        <p id="card">Reduz o risco de doenças</p>
-                    </div>
-                </div>
-                <div id="info_lista2">
-                    <div id="info_icon00">
-                        <img src="img/pet_info00.jpg" alt="">
-                    </div>
-                </div>
-                <div id="info_lista3">
-                    <div id="info_icon04">
-                        <img src="img/pet_info04.jpg" alt="">
-                        <p id="card">Diminui a sensação de solidão</p>
-                    </div>
-                    <div id="info_icon05">
-                        <img src="img/pet_info05.jpg" alt="">
-                        <p id="card">Oportunidades para caminhar</p>
-                    </div>
-                    <div id="info_icon06">
-                        <img src="img/pet_info06.jpg" alt="">
-                        <p id="card">Oportunidades de socialização</p>
-                    </div>
-                </div>
-            </div>
-        </article>
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Início</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+          <li><a href="adote.html" class="nav-link">Adote</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" aria-label="Imagem de destaque">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <img
+      class="hero-img"
+      src="img/cao_gato_topo_adote.jpg"
+      alt="Cão e gato felizes lado a lado"
+      loading="eager"
+    >
+    <div class="hero-content">
+      <h1 class="hero-title">Todo pet merece<br>um lar com amor 🐾</h1>
+      <p class="hero-subtitle">Conectamos animais resgatados a famílias que podem mudar suas vidas.</p>
+      <a href="adote.html" class="btn btn-primary">Quero adotar</a>
+    </div>
+  </section>
+
+  <!-- ===================== CONTEÚDO PRINCIPAL ===================== -->
+  <main id="main-content">
+
+    <!-- Benefícios de ter um pet -->
+    <section class="benefits" aria-labelledby="benefits-heading">
+      <div class="container">
+        <h2 id="benefits-heading" class="section-title">Benefícios de viver com um pet</h2>
+        <p class="section-subtitle">Veja como ter um companheiro de quatro patas transforma sua vida:</p>
+
+        <div class="benefits-grid" role="list">
+
+          <article class="benefit-card benefit-card--purple" role="listitem">
+            <img src="img/pet_info01.jpg" alt="Ícone de coração representando saúde cardiovascular" loading="lazy">
+            <p>Diminuição da pressão arterial</p>
+          </article>
+
+          <article class="benefit-card benefit-card--orange" role="listitem">
+            <img src="img/pet_info02.jpg" alt="Ícone representando nível de colesterol" loading="lazy">
+            <p>Diminui o nível de colesterol</p>
+          </article>
+
+          <article class="benefit-card benefit-card--teal" role="listitem">
+            <img src="img/pet_info03.jpg" alt="Ícone de escudo representando prevenção de doenças" loading="lazy">
+            <p>Reduz o risco de doenças</p>
+          </article>
+
+          <!-- <article class="benefit-card benefit-card--center" role="listitem" aria-label="Ilustração central">
+            <img src="img/pet_info00.jpg" alt="Pet feliz ao lado do tutor" loading="lazy">
+          </article> -->
+
+          <article class="benefit-card benefit-card--green" role="listitem">
+            <img src="img/pet_info04.jpg" alt="Ícone representando companhia e afeto" loading="lazy">
+            <p>Diminui a sensação de solidão</p>
+          </article>
+
+          <article class="benefit-card benefit-card--yellow" role="listitem">
+            <img src="img/pet_info05.jpg" alt="Ícone de caminhada ao ar livre" loading="lazy">
+            <p>Oportunidades para caminhar</p>
+          </article>
+
+          <article class="benefit-card benefit-card--red" role="listitem">
+            <img src="img/pet_info06.jpg" alt="Ícone de pessoas interagindo socialmente" loading="lazy">
+            <p>Oportunidades de socialização</p>
+          </article>
+
+        </div>
+      </div>
     </section>
 
-    <!-- </div> -->
+    <!-- Dados numéricos / Contadores -->
+    <section class="stats" aria-labelledby="stats-heading">
+      <h2 id="stats-heading" class="visually-hidden">Nossos números</h2>
+      <div class="container stats-grid">
 
-    <!-- Dados numéricos home -->    
-    <div class="dados">        
-        <div class="dados_config">
-            <div class="counter01" data-target="800"></div>
-            <p>Adoções</p>
+        <div class="stat-item">
+          <span class="stat-number" data-target="800" aria-live="polite">0</span>
+          <p class="stat-label">Adoções</p>
         </div>
 
-        <div class="dados_config">
-            <div class="counter02" data-target="600"></div>
-            <p>Resgates</p>
+        <div class="stat-item">
+          <span class="stat-number" data-target="600" aria-live="polite">0</span>
+          <p class="stat-label">Resgates</p>
         </div>
 
-        <div class="dados_config">
-            <div class="counter03" data-target="300"></div>
-            <p>Parceiros</p>
+        <div class="stat-item">
+          <span class="stat-number" data-target="300" aria-live="polite">0</span>
+          <p class="stat-label">Parceiros</p>
         </div>
 
-        <div class="dados_config">
-            <div class="counter04" data-target="800"></div>
-            <p>Serviços</p>
+        <div class="stat-item">
+          <span class="stat-number" data-target="1100" aria-live="polite">0</span>
+          <p class="stat-label">Serviços</p>
         </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+
+      <div class="footer-info">
+        <h2 class="footer-brand">Adote Patinhas</h2>
+        <address>
+          <p>
+            R. do Oratório, 215<br>
+            Mooca, São Paulo – SP, 03117-000
+          </p>
+          <p>
+            <a href="https://www.adotepatinhas.com.br" target="_blank" rel="noopener noreferrer">www.adotepatinhas.com.br</a><br>
+            <a href="mailto:contato@adotepatinhas.com.br">contato@adotepatinhas.com.br</a><br>
+            <a href="tel:+551156723272">Tel.: (11) 5672-3272</a>
+          </p>
+        </address>
+      </div>
+
+      <div class="footer-social">
+        <h2 class="footer-social-title">Redes Sociais</h2>
+        <nav aria-label="Redes sociais">
+          <ul class="social-list" role="list">
+            <li><a href="#" class="social-link" aria-label="WhatsApp"><img src="img/icone_whatsapp.jpg" alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="Facebook"><img src="img/icone_face.jpg" alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="Instagram"><img src="img/icone_instagram.jpg" alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="LinkedIn"><img src="img/icone_linkedin.jpg" alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="YouTube"><img src="img/icone_youtube.jpg" alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="TikTok"><img src="img/icone_tiktok.jpg" alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="X (Twitter)"><img src="img/icone_x.jpg" alt="" aria-hidden="true" loading="lazy"></a></li>
+          </ul>
+        </nav>
+      </div>
+
     </div>
+    <p class="footer-copy">© <span id="year"></span> Adote Patinhas. Feito com ❤️ por quem ama animais.</p>
+  </footer>
 
-    <footer>
-        <div class="loja">
-            <h4>Adote Patinhas</h4>
-            <p>
-                Av. Cães e Gatos de Barros, 147<br>
-                Mooca, São Paulo - SP, 03115-020<br>
-                www.adotepatinhas.com.br<br>
-                contato@adotepatinhas.com.br<br>
-                Tel.: (11) 5672-3272<br>                
-            </p>
-        </div>
-        <div class="redes">
-            <h4>Redes Sociais</h4>
-            <div class="redes_icon">
-                <a href="#"><img class="icon_social" src="img/icone_whatsapp.jpg" alt="Whatsapp"></a>
-                <a href="#"><img class="icon_social" src="img/icone_face.jpg" alt="Facebook"></a>
-                <a href="#"><img class="icon_social" src="img/icone_instagram.jpg" alt="Instagram"></a>
-                <a href="#"><img class="icon_social" src="img/icone_linkedin.jpg" alt="LinkedIn"></a>
-                <a href="#"><img class="icon_social" src="img/icone_youtube.jpg" alt="YouTube"></a>
-                <a href="#"><img class="icon_social" src="img/icone_tiktok.jpg" alt="TikTok"></a>
-                <a href="#"><img class="icon_social" src="img/icone_x.jpg" alt="X"></a>
-            </div>
-        </div>
-    </footer>
+  <!-- ===================== BOTÃO VOLTAR AO TOPO ===================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo da página" hidden>
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

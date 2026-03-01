@@ -2,114 +2,207 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Minhas Patinhas | Sobre</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça a história, missão, visão e valores da Adote Patinhas – organização dedicada à adoção responsável de cães e gatos em São Paulo.">
+  <meta name="theme-color" content="#04a6b5">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Adote Patinhas – Sobre Nós</title>
 </head>
 
 <body>
-    <!-- Nome do site -->
-    <h1>Adote Patinhas</h1>
 
-    <!-- Menu -->
-    <nav>
-        <p><a href="index.html">Início</a></p>
-        <p><a href="sobre.html">Sobre</a></p>
-        <p><a href="adote.html">Adote</a></p>
-        <p><a href="contato.html">Contatos</a></p>
-    </nav>
+  <!-- ===================== SKIP LINK ===================== -->
+  <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
 
-    <header>
-        <img src="img/cao_gato_topo_sobre.jpg" alt="">
-    </header>
+  <!-- ===================== HEADER / NAVEGAÇÃO ===================== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Adote Patinhas – página inicial">
+        <span class="logo-paw" aria-hidden="true">🐾</span>
+        <span class="logo-text">Adote Patinhas</span>
+      </a>
 
-    <section>
-        <article>
-            <h2>Sobre Nós</h2>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu de navegação">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
 
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html"  class="nav-link">Início</a></li>
+          <li><a href="sobre.html"  class="nav-link active" aria-current="page">Sobre</a></li>
+          <li><a href="adote.html"  class="nav-link">Adote</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <h3>Sobre a Adote Patinhas</h3>
-            <p>
-                A <strong>Adote Patinhas</strong> nasceu do amor pelos animais e da certeza de que todo cão e todo gato
-                merecem um lar seguro, responsável e cheio de carinho. Somos uma organização dedicada exclusivamente ao acolhimento, cuidado e promoção da adoção responsável de cães e gatos. Atuamos resgatando, oferecendo suporte veterinário, garantindo a preparação adequada para adoção e conectando cada animal a uma família comprometida com seu bem-estar ao longo de toda a vida. Acreditamos que a adoção vai além de um gesto de carinho — é um ato de responsabilidade e transformação social. Por isso, trabalhamos também na conscientização sobre posse responsável, prevenção ao abandono e
-                importância da castração, contribuindo para uma sociedade mais empática e respeitosa com os animais. Cada patinha que passa por nós carrega uma história. Nosso compromisso é transformar essas histórias em recomeços felizes. Através de doações, parcerias e do apoio da comunidade, seguimos firmes em nossa missão de reduzir o abandono e promover o encontro entre cães, gatos e lares preparados para recebê-los com amor e responsabilidade. <br><br>
+  <!-- ===================== HERO ===================== -->
+  <section class="hero hero--short" aria-label="Imagem de destaque da página Sobre">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <img
+      class="hero-img"
+      src="img/cao_gato_topo_sobre.jpg"
+      alt="Cão e gato descansando juntos representando cuidado e acolhimento"
+      loading="eager"
+    >
+    <div class="hero-content">
+      <h1 class="hero-title">Sobre Nós</h1>
+      <p class="hero-subtitle">Conheça quem está por trás de cada história de recomeço.</p>
+    </div>
+  </section>
 
-                <strong class="maior">Adote Patinhas</strong>
-                <p class="menor">Conectando vidas, transformando histórias.</p>
-            </p>
+  <!-- ===================== CONTEÚDO PRINCIPAL ===================== -->
+  <main id="main-content">
 
-            <hr>
+    <!-- Quem somos -->
+    <section class="about-section" aria-labelledby="about-heading">
+      <div class="container about-container">
 
+        <div class="about-text reveal">
+          <h2 id="about-heading" class="section-title text-left">Sobre a Adote Patinhas</h2>
+          <p>
+            A <strong>Adote Patinhas</strong> nasceu do amor pelos animais e da certeza de que todo cão e todo gato
+            merecem um lar seguro, responsável e cheio de carinho. Somos uma organização dedicada ao acolhimento,
+            cuidado e promoção da <strong>adoção responsável</strong> de cães e gatos.
+          </p>
+          <p>
+            Atuamos resgatando, oferecendo suporte veterinário, garantindo a preparação adequada para adoção e
+            conectando cada animal a uma família comprometida com seu bem-estar ao longo de toda a vida.
+          </p>
+          <p>
+            Acreditamos que a adoção vai além de um gesto de carinho — é um ato de responsabilidade e transformação
+            social. Por isso, trabalhamos também na conscientização sobre posse responsável, prevenção ao abandono e
+            importância da castração, contribuindo para uma sociedade mais empática e respeitosa com os animais.
+          </p>
+          <p>
+            Cada patinha que passa por nós carrega uma história. Nosso compromisso é transformar essas histórias em
+            recomeços felizes. Através de doações, parcerias e do apoio da comunidade, seguimos firmes em nossa missão.
+          </p>
 
-            <h3>🎯 Missão</h3>
-            <p>
-                Promover a adoção responsável de cães e gatos, oferecendo acolhimento, cuidados, orientação e suporte,
-                conectando cada patinha a um lar seguro, amoroso e definitivo.
-            </p>
+          <div class="about-tagline" aria-label="Slogan">
+            <span class="tagline-brand">Adote Patinhas</span>
+            <span class="tagline-sub">Conectando vidas, transformando histórias.</span>
+          </div>
+        </div>
 
-            <h3>🌎 Visão</h3>
-            <p>
-                Ser referência regional em proteção e adoção responsável de cães e gatos, contribuindo para a redução do
-                abandono e para a construção de uma sociedade mais consciente, empática e comprometida com o bem-estar
-                animal.
-            </p>
-
-            <h3>💛 Valores</h3>
-            <p>
-                <strong>🐶 Amor e Respeito Animal</strong><br>
-                Colocamos o bem-estar de cães e gatos sempre em primeiro lugar.
-            </p>
-
-            <p>
-                <strong>🏡 Adoção Responsável</strong> <br>
-                Priorizamos lares preparados, conscientes e comprometidos com o cuidado vitalício.
-            </p>
-
-            <p>
-                <strong>🤝 Transparência</strong><br>
-                Atuamos com ética, clareza e responsabilidade em todas as ações e doações.
-            </p>
-
-            <p>
-                <strong>🌱 Compromisso Social</strong><br>
-                Trabalhamos para reduzir o abandono e promover educação sobre posse responsável.
-            </p>
-
-            <p>
-                <strong>💉 Cuidado e Proteção</strong> <br>
-                Garantimos que todos os animais disponíveis para adoção recebam os cuidados necessários antes de
-                encontrarem
-                um novo lar.
-            </p>
-        </article>
+      </div>
     </section>
 
-    <footer>
-        <div class="loja">
-            <h4>Adote Patinhas</h4>
-            <p>
-                Av. Cães e Gatos de Barros, 147<br>
-                Mooca, São Paulo - SP, 03115-020<br>
-                www.adotepatinhas.com.br<br>
-                contato@adotepatinhas.com.br<br>
-                Tel.: (11) 5672-3272<br>                
-            </p>
-        </div>
-        <div class="redes">
-            <h4>Redes Sociais</h4>
-            <div class="redes_icon">
-                <a href="#"><img class="icon_social" src="img/icone_whatsapp.jpg" alt="Whatsapp"></a>
-                <a href="#"><img class="icon_social" src="img/icone_face.jpg" alt="Facebook"></a>
-                <a href="#"><img class="icon_social" src="img/icone_instagram.jpg" alt="Instagram"></a>
-                <a href="#"><img class="icon_social" src="img/icone_linkedin.jpg" alt="LinkedIn"></a>
-                <a href="#"><img class="icon_social" src="img/icone_youtube.jpg" alt="YouTube"></a>
-                <a href="#"><img class="icon_social" src="img/icone_tiktok.jpg" alt="TikTok"></a>
-                <a href="#"><img class="icon_social" src="img/icone_x.jpg" alt="X"></a>
-            </div>
-        </div>
-    </footer>
+    <!-- Missão, Visão, Valores -->
+    <section class="mvv-section" aria-labelledby="mvv-heading">
+      <div class="container">
+        <h2 id="mvv-heading" class="section-title">Nossa Essência</h2>
+        <p class="section-subtitle">Os pilares que guiam cada ação da Adote Patinhas.</p>
 
+        <div class="mvv-grid">
+
+          <!-- Missão -->
+          <article class="mvv-card mvv-card--mission reveal" aria-labelledby="mission-heading">
+            <div class="mvv-icon" aria-hidden="true">🎯</div>
+            <h3 id="mission-heading">Missão</h3>
+            <p>
+              Promover a adoção responsável de cães e gatos, oferecendo acolhimento, cuidados, orientação e suporte,
+              conectando cada patinha a um lar seguro, amoroso e definitivo.
+            </p>
+          </article>
+
+          <!-- Visão -->
+          <article class="mvv-card mvv-card--vision reveal" aria-labelledby="vision-heading">
+            <div class="mvv-icon" aria-hidden="true">🌎</div>
+            <h3 id="vision-heading">Visão</h3>
+            <p>
+              Ser referência regional em proteção e adoção responsável de cães e gatos, contribuindo para a redução do
+              abandono e para a construção de uma sociedade mais consciente, empática e comprometida com o bem-estar animal.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- Valores -->
+        <div class="values-grid" role="list" aria-label="Lista de valores">
+
+          <article class="value-card reveal" role="listitem" aria-labelledby="val1">
+            <span class="value-icon" aria-hidden="true">🐶</span>
+            <h4 id="val1">Amor e Respeito Animal</h4>
+            <p>Colocamos o bem-estar de cães e gatos sempre em primeiro lugar.</p>
+          </article>
+
+          <article class="value-card reveal" role="listitem" aria-labelledby="val2">
+            <span class="value-icon" aria-hidden="true">🏡</span>
+            <h4 id="val2">Adoção Responsável</h4>
+            <p>Priorizamos lares preparados, conscientes e comprometidos com o cuidado vitalício.</p>
+          </article>
+
+          <article class="value-card reveal" role="listitem" aria-labelledby="val3">
+            <span class="value-icon" aria-hidden="true">🤝</span>
+            <h4 id="val3">Transparência</h4>
+            <p>Atuamos com ética, clareza e responsabilidade em todas as ações e doações.</p>
+          </article>
+
+          <article class="value-card reveal" role="listitem" aria-labelledby="val4">
+            <span class="value-icon" aria-hidden="true">🌱</span>
+            <h4 id="val4">Compromisso Social</h4>
+            <p>Trabalhamos para reduzir o abandono e promover educação sobre posse responsável.</p>
+          </article>
+
+          <article class="value-card reveal" role="listitem" aria-labelledby="val5">
+            <span class="value-icon" aria-hidden="true">💉</span>
+            <h4 id="val5">Cuidado e Proteção</h4>
+            <p>Garantimos que todos os animais recebam os cuidados necessários antes de encontrarem um novo lar.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+
+      <div class="footer-info">
+        <h2 class="footer-brand">Adote Patinhas</h2>
+        <address>
+          <p>
+            R. do Oratório, 215<br>
+            Mooca, São Paulo – SP, 03117-000
+          </p>
+          <p>
+            <a href="https://www.adotepatinhas.com.br" target="_blank" rel="noopener noreferrer">www.adotepatinhas.com.br</a><br>
+            <a href="mailto:contato@adotepatinhas.com.br">contato@adotepatinhas.com.br</a><br>
+            <a href="tel:+551156723272">Tel.: (11) 5672-3272</a>
+          </p>
+        </address>
+      </div>
+
+      <div class="footer-social">
+        <h2 class="footer-social-title">Redes Sociais</h2>
+        <nav aria-label="Redes sociais">
+          <ul class="social-list" role="list">
+            <li><a href="#" class="social-link" aria-label="WhatsApp"><img src="img/icone_whatsapp.jpg"  alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="Facebook"><img src="img/icone_face.jpg"      alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="Instagram"><img src="img/icone_instagram.jpg" alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="LinkedIn"><img src="img/icone_linkedin.jpg"  alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="YouTube"><img src="img/icone_youtube.jpg"   alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="TikTok"><img src="img/icone_tiktok.jpg"     alt="" aria-hidden="true" loading="lazy"></a></li>
+            <li><a href="#" class="social-link" aria-label="X (Twitter)"><img src="img/icone_x.jpg"     alt="" aria-hidden="true" loading="lazy"></a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Adote Patinhas. Feito com ❤️ por quem ama animais.</p>
+  </footer>
+
+  <!-- ===================== BOTÃO VOLTAR AO TOPO ===================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo da página" hidden>
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
