@@ -6,6 +6,10 @@
 /* ----------------------------------------------------------
    0. RESET & BOX-SIZING
    ---------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -36,8 +40,9 @@
   --clr-red:     #ff604b;
 
   /* Tipografia */
-  --ff-display: Georgia, 'Times New Roman', Times, serif;
-  --ff-body:    'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+  
+  --ff-display: 'Quicksand', sans-serif;
+  --ff-body:    'Open Sans', sans-serif;
 
   /* Espaçamentos */
   --space-xs:   0.5rem;
@@ -688,10 +693,14 @@ p {
 .footer-copy {
   text-align: center;
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.929);
+  color: rgb(255, 255, 255);
   border-top: 1px solid rgba(255,255,255,.15);
   padding-top: var(--space-md);
   margin-top: 0;
+}
+
+.amor {
+  color: rgb(57, 57, 57);
 }
 
 /* ----------------------------------------------------------
